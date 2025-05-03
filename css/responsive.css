@@ -1,0 +1,246 @@
+/*
+* DMCI IMMOBILIER Responsive Styles
+*/
+
+/* ========== Responsive Breakpoints ========== */
+/* 
+  - Extra small devices (phones, 576px and down)
+  - Small devices (tablets, 577px to 768px)
+  - Medium devices (laptops, 769px to 992px)
+  - Large devices (desktops, 993px to 1200px)
+  - Extra large devices (large desktops, 1201px and up)
+*/
+
+/* Phones (576px and down) */
+@media (max-width: 576px) {
+    :root {
+        --font-4xl: 2rem;      /* Reduced from 3rem */
+        --font-3xl: 1.75rem;   /* Reduced from 2.25rem */
+        --font-2xl: 1.5rem;    /* Reduced from 1.875rem */
+        --spacing-3xl: 3rem;   /* Reduced from 4rem */
+    }
+
+    .section {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    #hero-slider {
+        height: 80vh;
+    }
+
+    .slide-content h1 {
+        font-size: var(--font-2xl);
+    }
+    
+    .service-card, .property-card, .feature-card, .team-member {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .slider-controls {
+        bottom: var(--spacing-md);
+    }
+
+    .about-content, .mission-values-content, .contact-container {
+        gap: var(--spacing-xl);
+    }
+
+    #footer {
+        padding-top: var(--spacing-2xl);
+    }
+}
+
+/* Small devices (tablets, 577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    :root {
+        --font-4xl: 2.5rem;    /* Slightly reduced */
+        --spacing-3xl: 3.5rem; /* Slightly reduced */
+    }
+
+    .service-card, .property-card, .feature-card, .team-member {
+        margin-bottom: var(--spacing-md);
+    }
+}
+
+/* All mobile devices (768px and down) */
+@media (max-width: 768px) {
+    /* Header and Navigation */
+    #header {
+        background-color: var(--white);
+        padding: var(--spacing-sm) 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--white);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        padding: var(--spacing-md) 0;
+        transform: translateY(-150%);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+        z-index: 100;
+    }
+
+    .menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        padding: var(--spacing-sm) 0;
+    }
+
+    /* Page Banner */
+    #page-banner {
+        height: 200px;
+        margin-top: 60px;
+    }
+
+    /* Layout adjustments */
+    .services-grid, .properties-grid, .features-grid, .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    .property-modal-details {
+        padding: var(--spacing-md);
+    }
+
+    .property-modal-features {
+        gap: var(--spacing-sm);
+    }
+
+    .property-modal-features span {
+        font-size: var(--font-sm);
+    }
+
+    /* Forms */
+    #property-filter-form {
+        grid-template-columns: 1fr;
+    }
+
+    /* Testimonials */
+    .testimonial-slider {
+        height: 350px;
+    }
+
+    /* Numbers section */
+    .numbers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* About page */
+    .about-text, .mission-box, .values-box {
+        text-align: center;
+    }
+
+    .about-text .section-header h2:after,
+    .mission-box .section-header h2:after,
+    .values-box .section-header h2:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .mission-box ul {
+        text-align: left;
+    }
+
+    /* Contact page */
+    .contact-info, .contact-form-container {
+        text-align: center;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-icon {
+        margin-right: 0;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Medium devices (small laptops, 769px to 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .services-grid, .properties-grid, .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large devices (desktops, 993px to 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Extra large devices (large desktops, 1201px and up) */
+@media (min-width: 1201px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    #header, #footer, .slider-controls, .property-modal-actions, #cta {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #000;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .property-card, .service-card, .feature-card, .team-member {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .map-container {
+        height: auto;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 2cm;
+    }
+}
