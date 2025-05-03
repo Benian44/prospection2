@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Offres - DMCI IMMOBILIER</title>
+    <meta name="description" content="Découvrez les meilleures offres immobilières de DMCI IMMOBILIER à Bassam, Côte d'Ivoire. Villas, appartements, terrains à vendre et à louer.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="DMCI IMMOBILIER">
+                </a>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="offres.html" class="active">Nos Offres</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section id="page-banner" class="offers-banner">
+        <div class="banner-content">
+            <h1>Nos Offres</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Accueil</a> <span>&gt;</span> <span>Nos Offres</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Filters -->
+    <section id="property-filters" class="section">
+        <div class="container">
+            <div class="filter-container">
+                <form id="property-filter-form">
+                    <div class="filter-group">
+                        <label for="property-type">Type de bien</label>
+                        <select id="property-type">
+                            <option value="all">Tous les types</option>
+                            <option value="house">Maison</option>
+                            <option value="apartment">Appartement</option>
+                            <option value="land">Terrain</option>
+                            <option value="commercial">Commercial</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="transaction-type">Transaction</label>
+                        <select id="transaction-type">
+                            <option value="all">Tous</option>
+                            <option value="sale">Vente</option>
+                            <option value="rent">Location</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="price-range">Prix (FCFA)</label>
+                        <div class="price-inputs">
+                            <input type="number" id="min-price" placeholder="Min">
+                            <span>-</span>
+                            <input type="number" id="max-price" placeholder="Max">
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label for="location">Emplacement</label>
+                        <select id="location">
+                            <option value="all">Toutes les zones</option>
+                            <option value="centre">Centre-ville</option>
+                            <option value="quartier-residentiel">Quartier Résidentiel</option>
+                            <option value="zone-extension">Zone d'extension</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">Filtrer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties List -->
+    <section id="properties-list" class="section bg-light">
+        <div class="container">
+            <div class="properties-header">
+                <h2>Propriétés Disponibles</h2>
+                <div class="properties-count"><span id="properties-total">12</span> biens trouvés</div>
+            </div>
+            <div class="properties-grid">
+                <!-- Property 1 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Villa moderne à Bassam">
+                        <div class="property-tag">À Vendre</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Villa moderne à Bassam</h3>
+                        <div class="property-location"><i class="fas fa-map-marker-alt"></i> Bassam, Quartier Résidentiel</div>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Chambres</span>
+                            <span><i class="fas fa-bath"></i> 3 SdB</span>
+                            <span><i class="fas fa-ruler-combined"></i> 250m²</span>
+                        </div>
+                        <div class="property-price">75 000 000 FCFA</div>
+                        <a href="#" class="btn-secondary property-details-btn" data-id="prop1">Voir plus</a>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Appartement Haut Standing">
+                        <div class="property-tag tag-rent">À Louer</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Appartement Haut Standing</h3>
+                        <div class="property-location"><i class="fas fa-map-marker-alt"></i> Bassam, Centre-ville</div>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Chambres</span>
+                            <span><i class="fas fa-bath"></i> 2 SdB</span>
+                            <span><i class="fas fa-ruler-combined"></i> 120m²</span>
+                        </div>
+                        <div class="property-price">450 000 FCFA/mois</div>
+                        <a href="#" class="btn-secondary property-details-btn" data-id="prop2">Voir plus</a>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.pexels.com/photos/7031406/pexels-photo-7031406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Terrain constructible">
+                        <div class="property-tag">À Vendre</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Terrain constructible</h3>
+                        <div class="property-location"><i class="fas fa-map-marker-alt"></i> Bassam, Zone d'extension</div>
+                        <div class="property-features">
+                            <span><i class="fas fa-ruler-combined"></i> 500m²</span>
+                            <span><i class="fas fa-file-contract"></i> Titre foncier</span>
+                        </div>
+                        <div class="property-price">25 000 000 FCFA</div>
+                        <a href="#" class="btn-secondary property-details-btn" data-id="prop3">Voir plus</a>
+                    </div>
+                </div>
+
+                <!-- Property 4 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Maison familiale spacieuse">
+                        <div class="property-tag">À Vendre</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Maison familiale spacieuse</h3>
+                        <div class="property-location"><i class="fas fa-map-marker-alt"></i> Bassam, Quartier Résidentiel</div>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 5 Chambres</span>
+                            <span><i class="fas fa-bath"></i> 3 SdB</span>
+                            <span><i class="fas fa-ruler-combined"></i> 300m²</span>
+                        </div>
+                        <div class="property-price">90 000 000 FCFA</div>
+                        <a href="#" class="btn-secondary property-details-btn" data-id="prop4">Voir plus</a>
+                    </div>
+                </div>
+
+                <!-- Property 5 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Studio moderne">
+                        <div class="property-tag tag-rent">À Louer</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Studio moderne</h3>
+                        <div class="property-location"><i class="fas fa-map-marker-alt"></i> Bassam, Centre-ville</div>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 1 Chambre</span>
+                            <span><i class="fas fa-bath"></i> 1 SdB</span>
+                            <span><i class="fas fa-ruler-combined"></i> 45m²</span>
+                        </div>
+                        <div class="property-price">150 000 FCFA/mois</div>
+                        <a href="#" class="btn-secondary property-details-btn" data-id="prop5">Voir plus</a>
+                    </div>
+                </div>
+
+                <!-- Property 6 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.pexels.com/photos/1212053/pexels-photo-1212053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Immeuble commercial">
+                        <div class="property-tag">À Vendre</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Immeuble commercial</h3>
+                        <div class="property-location"><i class="fas fa-map-marker-alt"></i> Bassam, Centre-ville</div>
+                        <div class="property-features">
+                            <span><i class="fas fa-building"></i> 3 Étages</span>
+                            <span><i class="fas fa-ruler-combined"></i> 500m²</span>
+                        </div>
+                        <div class="property-price">150 000 000 FCFA</div>
+                        <a href="#" class="btn-secondary property-details-btn" data-id="prop6">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Modal -->
+    <div id="property-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="property-gallery">
+                    <div class="main-image">
+                        <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Property Image" id="modal-main-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="thumbnail active" alt="Thumbnail 1">
+                        <img src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="thumbnail" alt="Thumbnail 2">
+                        <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="thumbnail" alt="Thumbnail 3">
+                        <img src="https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="thumbnail" alt="Thumbnail 4">
+                    </div>
+                </div>
+                <div class="property-modal-details">
+                    <h2 id="modal-property-title">Villa moderne à Bassam</h2>
+                    <div class="property-modal-price" id="modal-property-price">75 000 000 FCFA</div>
+                    <div class="property-modal-location" id="modal-property-location"><i class="fas fa-map-marker-alt"></i> Bassam, Quartier Résidentiel</div>
+                    <div class="property-modal-features" id="modal-property-features">
+                        <span><i class="fas fa-bed"></i> 4 Chambres</span>
+                        <span><i class="fas fa-bath"></i> 3 SdB</span>
+                        <span><i class="fas fa-ruler-combined"></i> 250m²</span>
+                        <span><i class="fas fa-car"></i> 2 Garages</span>
+                    </div>
+                    <div class="property-modal-description">
+                        <h3>Description</h3>
+                        <p id="modal-property-description">Magnifique villa moderne située dans un quartier résidentiel calme et sécurisé à Bassam. Cette propriété offre 4 chambres spacieuses, 3 salles de bain, un grand salon, une cuisine équipée, une terrasse, un jardin bien entretenu et 2 garages. Idéale pour une famille cherchant confort et tranquillité.</p>
+                    </div>
+                    <div class="property-modal-details-list">
+                        <h3>Détails du bien</h3>
+                        <ul id="modal-property-details-list">
+                            <li><strong>Type de bien:</strong> Villa</li>
+                            <li><strong>Statut:</strong> À vendre</li>
+                            <li><strong>Surface du terrain:</strong> 600m²</li>
+                            <li><strong>Année de construction:</strong> 2020</li>
+                            <li><strong>Climatisation:</strong> Oui</li>
+                            <li><strong>Sécurité:</strong> Gardiennage 24/7</li>
+                        </ul>
+                    </div>
+                    <div class="property-modal-actions">
+                        <a href="contact.html" class="btn-primary">Contactez-nous pour ce bien</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="DMCI IMMOBILIER">
+                    <p>Votre partenaire immobilier de confiance à Bassam, Côte d'Ivoire.</p>
+                </div>
+                <div class="footer-info">
+                    <h4>Contactez-nous</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Bassam, Rosier programme 2</li>
+                        <li><i class="fas fa-phone"></i> 2721523298 / 0707105357 / 0103180006</li>
+                        <li><i class="fas fa-envelope"></i> dmci.immobilier@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="offres.html">Nos Offres</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DMCI IMMOBILIER. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/properties.js"></script>
+</body>
+</html>
